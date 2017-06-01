@@ -7,21 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		542D256C1EDFEAD000994E06 /* UXJPersonalCenterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542D25691EDFEAD000994E06 /* UXJPersonalCenterVC.swift */; };
+		542D25741EDFEADA00994E06 /* UXJHomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542D256F1EDFEADA00994E06 /* UXJHomePageVC.swift */; };
+		542D25751EDFEADA00994E06 /* UXJHomePageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542D25721EDFEADA00994E06 /* UXJHomePageCell.swift */; };
+		542D25761EDFEADA00994E06 /* UXJHomePageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 542D25731EDFEADA00994E06 /* UXJHomePageCell.xib */; };
+		542D257A1EDFEAE300994E06 /* SystemConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542D25781EDFEAE300994E06 /* SystemConfig.swift */; };
+		542D257B1EDFEAE300994E06 /* UXJBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542D25791EDFEAE300994E06 /* UXJBaseVC.swift */; };
+		542D257F1EDFEAEA00994E06 /* UXJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542D257D1EDFEAEA00994E06 /* UXJNavigationController.swift */; };
+		542D25801EDFEAEA00994E06 /* UXJRootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542D257E1EDFEAEA00994E06 /* UXJRootVC.swift */; };
+		542D25871EDFEB7700994E06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542D25851EDFEB7700994E06 /* Assets.xcassets */; };
+		542D25881EDFEB7700994E06 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 542D25861EDFEB7700994E06 /* Info.plist */; };
 		54E4A91D1ED7BEAD004B33E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4A91C1ED7BEAD004B33E6 /* AppDelegate.swift */; };
 		54E4A91F1ED7BEAD004B33E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4A91E1ED7BEAD004B33E6 /* ViewController.swift */; };
 		54E4A9221ED7BEAD004B33E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E4A9201ED7BEAD004B33E6 /* Main.storyboard */; };
-		54E4A9241ED7BEAD004B33E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54E4A9231ED7BEAD004B33E6 /* Assets.xcassets */; };
 		54E4A9271ED7BEAD004B33E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E4A9251ED7BEAD004B33E6 /* LaunchScreen.storyboard */; };
 		54E4A9321ED7BEAD004B33E6 /* uxuanjiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4A9311ED7BEAD004B33E6 /* uxuanjiaTests.swift */; };
 		54E4A93D1ED7BEAD004B33E6 /* uxuanjiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4A93C1ED7BEAD004B33E6 /* uxuanjiaUITests.swift */; };
-		54E4A9521ED7C038004B33E6 /* UXJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4A9511ED7C038004B33E6 /* UXJNavigationController.swift */; };
-		54E4A9541ED7C063004B33E6 /* UXJRootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4A9531ED7C063004B33E6 /* UXJRootVC.swift */; };
-		54E4A9591ED7C2AD004B33E6 /* UXJHomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4A9581ED7C2AD004B33E6 /* UXJHomePageVC.swift */; };
-		54E4A95B1ED7C2CD004B33E6 /* UXJPersonalCenterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4A95A1ED7C2CD004B33E6 /* UXJPersonalCenterVC.swift */; };
-		54E4A95D1ED7D840004B33E6 /* UXJBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4A95C1ED7D840004B33E6 /* UXJBaseVC.swift */; };
-		54E4A9651ED7E52A004B33E6 /* SystemConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4A9641ED7E52A004B33E6 /* SystemConfig.swift */; };
-		54E4A9681ED7F9E4004B33E6 /* UXJHomePageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4A9661ED7F9E4004B33E6 /* UXJHomePageCell.swift */; };
-		54E4A9691ED7F9E4004B33E6 /* UXJHomePageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E4A9671ED7F9E4004B33E6 /* UXJHomePageCell.xib */; };
 		BAA8DA80C03B782D11A66EF1 /* Pods_uxuanjia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609BEAF4B72D19F6805C155E /* Pods_uxuanjia.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,27 +46,27 @@
 /* Begin PBXFileReference section */
 		3C837A2D33874374F80E8405 /* Pods-uxuanjia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uxuanjia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uxuanjia/Pods-uxuanjia.debug.xcconfig"; sourceTree = "<group>"; };
 		4B40EB5B0CF32E729C12AA6E /* Pods-uxuanjia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uxuanjia.release.xcconfig"; path = "Pods/Target Support Files/Pods-uxuanjia/Pods-uxuanjia.release.xcconfig"; sourceTree = "<group>"; };
+		542D25691EDFEAD000994E06 /* UXJPersonalCenterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UXJPersonalCenterVC.swift; sourceTree = "<group>"; };
+		542D256F1EDFEADA00994E06 /* UXJHomePageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UXJHomePageVC.swift; sourceTree = "<group>"; };
+		542D25721EDFEADA00994E06 /* UXJHomePageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UXJHomePageCell.swift; sourceTree = "<group>"; };
+		542D25731EDFEADA00994E06 /* UXJHomePageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UXJHomePageCell.xib; sourceTree = "<group>"; };
+		542D25781EDFEAE300994E06 /* SystemConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemConfig.swift; sourceTree = "<group>"; };
+		542D25791EDFEAE300994E06 /* UXJBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UXJBaseVC.swift; sourceTree = "<group>"; };
+		542D257D1EDFEAEA00994E06 /* UXJNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UXJNavigationController.swift; sourceTree = "<group>"; };
+		542D257E1EDFEAEA00994E06 /* UXJRootVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UXJRootVC.swift; sourceTree = "<group>"; };
+		542D25851EDFEB7700994E06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		542D25861EDFEB7700994E06 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		54E4A9191ED7BEAD004B33E6 /* uxuanjia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uxuanjia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E4A91C1ED7BEAD004B33E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		54E4A91E1ED7BEAD004B33E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		54E4A91E1ED7BEAD004B33E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		54E4A9211ED7BEAD004B33E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		54E4A9231ED7BEAD004B33E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54E4A9261ED7BEAD004B33E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		54E4A9281ED7BEAD004B33E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54E4A92D1ED7BEAD004B33E6 /* uxuanjiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uxuanjiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E4A9311ED7BEAD004B33E6 /* uxuanjiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uxuanjiaTests.swift; sourceTree = "<group>"; };
 		54E4A9331ED7BEAD004B33E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54E4A9381ED7BEAD004B33E6 /* uxuanjiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uxuanjiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E4A93C1ED7BEAD004B33E6 /* uxuanjiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uxuanjiaUITests.swift; sourceTree = "<group>"; };
 		54E4A93E1ED7BEAD004B33E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		54E4A9511ED7C038004B33E6 /* UXJNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UXJNavigationController.swift; sourceTree = "<group>"; };
-		54E4A9531ED7C063004B33E6 /* UXJRootVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UXJRootVC.swift; sourceTree = "<group>"; };
-		54E4A9581ED7C2AD004B33E6 /* UXJHomePageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UXJHomePageVC.swift; sourceTree = "<group>"; };
-		54E4A95A1ED7C2CD004B33E6 /* UXJPersonalCenterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UXJPersonalCenterVC.swift; sourceTree = "<group>"; };
-		54E4A95C1ED7D840004B33E6 /* UXJBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UXJBaseVC.swift; path = "../主要/UXJBaseVC.swift"; sourceTree = "<group>"; };
-		54E4A9641ED7E52A004B33E6 /* SystemConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SystemConfig.swift; path = "../主要/SystemConfig.swift"; sourceTree = "<group>"; };
-		54E4A9661ED7F9E4004B33E6 /* UXJHomePageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UXJHomePageCell.swift; sourceTree = "<group>"; };
-		54E4A9671ED7F9E4004B33E6 /* UXJHomePageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UXJHomePageCell.xib; sourceTree = "<group>"; };
 		609BEAF4B72D19F6805C155E /* Pods_uxuanjia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uxuanjia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -95,27 +96,114 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		542D254C1EDEC87B00994E06 /* ThirdLibrary */ = {
+		542D25641EDFEAB700994E06 /* SupportingFile */ = {
+			isa = PBXGroup;
+			children = (
+				542D25851EDFEB7700994E06 /* Assets.xcassets */,
+				542D25861EDFEB7700994E06 /* Info.plist */,
+				54E4A91E1ED7BEAD004B33E6 /* ViewController.swift */,
+				54E4A9201ED7BEAD004B33E6 /* Main.storyboard */,
+				54E4A9251ED7BEAD004B33E6 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFile;
+			sourceTree = "<group>";
+		};
+		542D25651EDFEABD00994E06 /* ThirdLibrary */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = ThirdLibrary;
 			sourceTree = "<group>";
 		};
-		542D254D1EDECB2E00994E06 /* common */ = {
-			isa = PBXGroup;
-			children = (
-				54E4A9641ED7E52A004B33E6 /* SystemConfig.swift */,
-				54E4A95C1ED7D840004B33E6 /* UXJBaseVC.swift */,
-			);
-			path = common;
-			sourceTree = "<group>";
-		};
-		542D254E1EDED11B00994E06 /* Expand */ = {
+		542D25661EDFEAC900994E06 /* Expand */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Expand;
+			sourceTree = "<group>";
+		};
+		542D25671EDFEAD000994E06 /* PersonalCenter */ = {
+			isa = PBXGroup;
+			children = (
+				542D25681EDFEAD000994E06 /* Controller */,
+				542D256A1EDFEAD000994E06 /* Model */,
+				542D256B1EDFEAD000994E06 /* View */,
+			);
+			path = PersonalCenter;
+			sourceTree = "<group>";
+		};
+		542D25681EDFEAD000994E06 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				542D25691EDFEAD000994E06 /* UXJPersonalCenterVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		542D256A1EDFEAD000994E06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		542D256B1EDFEAD000994E06 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		542D256D1EDFEADA00994E06 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				542D256E1EDFEADA00994E06 /* Controller */,
+				542D25701EDFEADA00994E06 /* Model */,
+				542D25711EDFEADA00994E06 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		542D256E1EDFEADA00994E06 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				542D256F1EDFEADA00994E06 /* UXJHomePageVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		542D25701EDFEADA00994E06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		542D25711EDFEADA00994E06 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				542D25721EDFEADA00994E06 /* UXJHomePageCell.swift */,
+				542D25731EDFEADA00994E06 /* UXJHomePageCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		542D25771EDFEAE300994E06 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				542D25781EDFEAE300994E06 /* SystemConfig.swift */,
+				542D25791EDFEAE300994E06 /* UXJBaseVC.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		542D257C1EDFEAEA00994E06 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				542D257D1EDFEAEA00994E06 /* UXJNavigationController.swift */,
+				542D257E1EDFEAEA00994E06 /* UXJRootVC.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		54E4A9101ED7BEAD004B33E6 = {
@@ -144,13 +232,13 @@
 			isa = PBXGroup;
 			children = (
 				54E4A91C1ED7BEAD004B33E6 /* AppDelegate.swift */,
-				54E4A94A1ED7BF1C004B33E6 /* main */,
-				542D254D1EDECB2E00994E06 /* common */,
-				54E4A9561ED7C0CE004B33E6 /* 首页 */,
-				54E4A9571ED7C0E2004B33E6 /* 个人中心 */,
-				542D254E1EDED11B00994E06 /* Expand */,
-				54E4A9551ED7C08A004B33E6 /* SupportingFile */,
-				542D254C1EDEC87B00994E06 /* ThirdLibrary */,
+				542D257C1EDFEAEA00994E06 /* Main */,
+				542D25771EDFEAE300994E06 /* Common */,
+				542D256D1EDFEADA00994E06 /* Home */,
+				542D25671EDFEAD000994E06 /* PersonalCenter */,
+				542D25661EDFEAC900994E06 /* Expand */,
+				542D25651EDFEABD00994E06 /* ThirdLibrary */,
+				542D25641EDFEAB700994E06 /* SupportingFile */,
 			);
 			path = uxuanjia;
 			sourceTree = "<group>";
@@ -171,46 +259,6 @@
 				54E4A93E1ED7BEAD004B33E6 /* Info.plist */,
 			);
 			path = uxuanjiaUITests;
-			sourceTree = "<group>";
-		};
-		54E4A94A1ED7BF1C004B33E6 /* main */ = {
-			isa = PBXGroup;
-			children = (
-				54E4A9531ED7C063004B33E6 /* UXJRootVC.swift */,
-				54E4A9511ED7C038004B33E6 /* UXJNavigationController.swift */,
-			);
-			name = main;
-			path = "主要";
-			sourceTree = "<group>";
-		};
-		54E4A9551ED7C08A004B33E6 /* SupportingFile */ = {
-			isa = PBXGroup;
-			children = (
-				54E4A9281ED7BEAD004B33E6 /* Info.plist */,
-				54E4A9231ED7BEAD004B33E6 /* Assets.xcassets */,
-				54E4A91E1ED7BEAD004B33E6 /* ViewController.swift */,
-				54E4A9201ED7BEAD004B33E6 /* Main.storyboard */,
-				54E4A9251ED7BEAD004B33E6 /* LaunchScreen.storyboard */,
-			);
-			name = SupportingFile;
-			sourceTree = "<group>";
-		};
-		54E4A9561ED7C0CE004B33E6 /* 首页 */ = {
-			isa = PBXGroup;
-			children = (
-				54E4A9581ED7C2AD004B33E6 /* UXJHomePageVC.swift */,
-				54E4A9661ED7F9E4004B33E6 /* UXJHomePageCell.swift */,
-				54E4A9671ED7F9E4004B33E6 /* UXJHomePageCell.xib */,
-			);
-			path = "首页";
-			sourceTree = "<group>";
-		};
-		54E4A9571ED7C0E2004B33E6 /* 个人中心 */ = {
-			isa = PBXGroup;
-			children = (
-				54E4A95A1ED7C2CD004B33E6 /* UXJPersonalCenterVC.swift */,
-			);
-			path = "个人中心";
 			sourceTree = "<group>";
 		};
 		93EDD5B3AF5D7FACDFB14933 /* Frameworks */ = {
@@ -345,8 +393,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				54E4A9271ED7BEAD004B33E6 /* LaunchScreen.storyboard in Resources */,
-				54E4A9691ED7F9E4004B33E6 /* UXJHomePageCell.xib in Resources */,
-				54E4A9241ED7BEAD004B33E6 /* Assets.xcassets in Resources */,
+				542D25761EDFEADA00994E06 /* UXJHomePageCell.xib in Resources */,
+				542D25871EDFEB7700994E06 /* Assets.xcassets in Resources */,
+				542D25881EDFEB7700994E06 /* Info.plist in Resources */,
 				54E4A9221ED7BEAD004B33E6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,15 +469,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54E4A9681ED7F9E4004B33E6 /* UXJHomePageCell.swift in Sources */,
-				54E4A9651ED7E52A004B33E6 /* SystemConfig.swift in Sources */,
+				542D25741EDFEADA00994E06 /* UXJHomePageVC.swift in Sources */,
+				542D25751EDFEADA00994E06 /* UXJHomePageCell.swift in Sources */,
 				54E4A91F1ED7BEAD004B33E6 /* ViewController.swift in Sources */,
-				54E4A95B1ED7C2CD004B33E6 /* UXJPersonalCenterVC.swift in Sources */,
+				542D257F1EDFEAEA00994E06 /* UXJNavigationController.swift in Sources */,
+				542D256C1EDFEAD000994E06 /* UXJPersonalCenterVC.swift in Sources */,
+				542D25801EDFEAEA00994E06 /* UXJRootVC.swift in Sources */,
+				542D257A1EDFEAE300994E06 /* SystemConfig.swift in Sources */,
 				54E4A91D1ED7BEAD004B33E6 /* AppDelegate.swift in Sources */,
-				54E4A9541ED7C063004B33E6 /* UXJRootVC.swift in Sources */,
-				54E4A9521ED7C038004B33E6 /* UXJNavigationController.swift in Sources */,
-				54E4A9591ED7C2AD004B33E6 /* UXJHomePageVC.swift in Sources */,
-				54E4A95D1ED7D840004B33E6 /* UXJBaseVC.swift in Sources */,
+				542D257B1EDFEAE300994E06 /* UXJBaseVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +519,7 @@
 				54E4A9211ED7BEAD004B33E6 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		54E4A9251ED7BEAD004B33E6 /* LaunchScreen.storyboard */ = {
@@ -478,6 +528,7 @@
 				54E4A9261ED7BEAD004B33E6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

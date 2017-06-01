@@ -78,13 +78,22 @@ class UXJHomePageVC: UXJBaseVC, UITableViewDelegate, UITableViewDataSource {
         return titleView
     }()
     
-//    private lazy var leftButton: UIButton = {
-//        let leftButton = UIButton()
+    //自定义leftbarItem
+    private lazy var leftButton: UIButton = {
+        let leftButton = UIButton()
 //        leftButton.frame = .init(x: 0, y: 0, width: 24, height: 24)
 //        leftButton.setImage(UIImage(named: "uxj_arrow_lower"), for: UIControlState.normal)
-//        
-//        return leftButton
-//    }()
+        let title = "广州"
+        let size = title.boundingRect(with: CGSize.init(width: CGFloat(MAXFLOAT), height: 20), options: [NSStringDrawingOptions.usesFontLeading,NSStringDrawingOptions.usesLineFragmentOrigin], attributes: [NSFontAttributeName:getFont(16)], context: nil).size
+        
+        leftButton.setTitle(title, for: .normal)
+        leftButton.titleLabel?.font = getFont(16)
+        leftButton.setTitleColor(UIColor.black, for: .normal)
+        leftButton.frame = .init(x: 0, y: 0, width: size.width+1, height: 25)
+//        leftButton.addTarget(self, action: (selectCity), for: .touchUpInside)
+        
+        return leftButton
+    }()
     
     private lazy var footerView: UIView = {
         let footerView = UIView()

@@ -135,6 +135,13 @@ public func getCurrentTime(_ timeformat:String) -> String {
 }
 
 /**
+ *  设置字体大小
+ */
+public func getFont(_ fontSize:CGFloat) -> UIFont{
+    return UIFont.systemFont(ofSize: fontSize)
+}
+
+/**
  *  判断手机号
  */
 public func isMobileNumber(_ mobileNum:String) -> Bool {
