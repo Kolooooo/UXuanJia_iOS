@@ -1,0 +1,20 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'uxuanjia' do
+    
+    pod 'SnapKit', '~> 3.2.0'
+
+    pod 'Alamofire', '~> 4.4.0'
+
+    pod 'SwiftyJSON'
+
+    pod 'SDWebImage', '~> 4.0.0'
+
+    pod 'SVProgressHUD'
+
+    pod 'IQKeyboardManagerSwift', '4.0.8'
+
+    pod 'MJRefresh'   
+
+end
