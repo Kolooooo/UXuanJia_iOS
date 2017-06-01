@@ -54,11 +54,11 @@
 		542D25791EDFEAE300994E06 /* UXJBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UXJBaseVC.swift; sourceTree = "<group>"; };
 		542D257D1EDFEAEA00994E06 /* UXJNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UXJNavigationController.swift; sourceTree = "<group>"; };
 		542D257E1EDFEAEA00994E06 /* UXJRootVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UXJRootVC.swift; sourceTree = "<group>"; };
-		542D25851EDFEB7700994E06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
-		542D25861EDFEB7700994E06 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		542D25851EDFEB7700994E06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		542D25861EDFEB7700994E06 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54E4A9191ED7BEAD004B33E6 /* uxuanjia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uxuanjia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E4A91C1ED7BEAD004B33E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		54E4A91E1ED7BEAD004B33E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
+		54E4A91E1ED7BEAD004B33E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		54E4A9211ED7BEAD004B33E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54E4A9261ED7BEAD004B33E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54E4A92D1ED7BEAD004B33E6 /* uxuanjiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uxuanjiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,18 +96,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		542D25641EDFEAB700994E06 /* SupportingFile */ = {
-			isa = PBXGroup;
-			children = (
-				542D25851EDFEB7700994E06 /* Assets.xcassets */,
-				542D25861EDFEB7700994E06 /* Info.plist */,
-				54E4A91E1ED7BEAD004B33E6 /* ViewController.swift */,
-				54E4A9201ED7BEAD004B33E6 /* Main.storyboard */,
-				54E4A9251ED7BEAD004B33E6 /* LaunchScreen.storyboard */,
-			);
-			path = SupportingFile;
-			sourceTree = "<group>";
-		};
 		542D25651EDFEABD00994E06 /* ThirdLibrary */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +194,18 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		542D258A1EDFECCF00994E06 /* SupportingFile */ = {
+			isa = PBXGroup;
+			children = (
+				542D25851EDFEB7700994E06 /* Assets.xcassets */,
+				542D25861EDFEB7700994E06 /* Info.plist */,
+				54E4A91E1ED7BEAD004B33E6 /* ViewController.swift */,
+				54E4A9201ED7BEAD004B33E6 /* Main.storyboard */,
+				54E4A9251ED7BEAD004B33E6 /* LaunchScreen.storyboard */,
+			);
+			name = SupportingFile;
+			sourceTree = "<group>";
+		};
 		54E4A9101ED7BEAD004B33E6 = {
 			isa = PBXGroup;
 			children = (
@@ -238,7 +238,7 @@
 				542D25671EDFEAD000994E06 /* PersonalCenter */,
 				542D25661EDFEAC900994E06 /* Expand */,
 				542D25651EDFEABD00994E06 /* ThirdLibrary */,
-				542D25641EDFEAB700994E06 /* SupportingFile */,
+				542D258A1EDFECCF00994E06 /* SupportingFile */,
 			);
 			path = uxuanjia;
 			sourceTree = "<group>";
@@ -519,7 +519,6 @@
 				54E4A9211ED7BEAD004B33E6 /* Base */,
 			);
 			name = Main.storyboard;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		54E4A9251ED7BEAD004B33E6 /* LaunchScreen.storyboard */ = {
@@ -528,7 +527,6 @@
 				54E4A9261ED7BEAD004B33E6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
