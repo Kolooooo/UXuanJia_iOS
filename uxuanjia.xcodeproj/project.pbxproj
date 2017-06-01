@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		542D255D1EDFAF5C00994E06 /* ZYNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542D255C1EDFAF5C00994E06 /* ZYNetWork.swift */; };
-		542D255F1EDFB06900994E06 /* ZYRootModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542D255E1EDFB06900994E06 /* ZYRootModel.swift */; };
 		54E4A91D1ED7BEAD004B33E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4A91C1ED7BEAD004B33E6 /* AppDelegate.swift */; };
 		54E4A91F1ED7BEAD004B33E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4A91E1ED7BEAD004B33E6 /* ViewController.swift */; };
 		54E4A9221ED7BEAD004B33E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E4A9201ED7BEAD004B33E6 /* Main.storyboard */; };
@@ -47,8 +45,6 @@
 /* Begin PBXFileReference section */
 		3C837A2D33874374F80E8405 /* Pods-uxuanjia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uxuanjia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uxuanjia/Pods-uxuanjia.debug.xcconfig"; sourceTree = "<group>"; };
 		4B40EB5B0CF32E729C12AA6E /* Pods-uxuanjia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uxuanjia.release.xcconfig"; path = "Pods/Target Support Files/Pods-uxuanjia/Pods-uxuanjia.release.xcconfig"; sourceTree = "<group>"; };
-		542D255C1EDFAF5C00994E06 /* ZYNetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYNetWork.swift; sourceTree = "<group>"; };
-		542D255E1EDFB06900994E06 /* ZYRootModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYRootModel.swift; sourceTree = "<group>"; };
 		54E4A9191ED7BEAD004B33E6 /* uxuanjia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uxuanjia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E4A91C1ED7BEAD004B33E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54E4A91E1ED7BEAD004B33E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,8 +114,6 @@
 		542D254E1EDED11B00994E06 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				542D255C1EDFAF5C00994E06 /* ZYNetWork.swift */,
-				542D255E1EDFB06900994E06 /* ZYRootModel.swift */,
 			);
 			name = Tools;
 			path = Expand;
@@ -432,9 +426,7 @@
 				54E4A91F1ED7BEAD004B33E6 /* ViewController.swift in Sources */,
 				54E4A95B1ED7C2CD004B33E6 /* UXJPersonalCenterVC.swift in Sources */,
 				54E4A91D1ED7BEAD004B33E6 /* AppDelegate.swift in Sources */,
-				542D255D1EDFAF5C00994E06 /* ZYNetWork.swift in Sources */,
 				54E4A9541ED7C063004B33E6 /* UXJRootVC.swift in Sources */,
-				542D255F1EDFB06900994E06 /* ZYRootModel.swift in Sources */,
 				54E4A9521ED7C038004B33E6 /* UXJNavigationController.swift in Sources */,
 				54E4A9591ED7C2AD004B33E6 /* UXJHomePageVC.swift in Sources */,
 				54E4A95D1ED7D840004B33E6 /* UXJBaseVC.swift in Sources */,
