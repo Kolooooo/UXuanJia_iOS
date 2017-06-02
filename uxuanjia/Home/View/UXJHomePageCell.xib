@@ -16,10 +16,10 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="318"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="317.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="317"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ceshi" translatesAutoresizingMaskIntoConstraints="NO" id="PPT-Io-DaD">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ceshi" translatesAutoresizingMaskIntoConstraints="NO" id="PPT-Io-DaD">
                         <rect key="frame" x="16" y="16" width="343" height="206"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="PPT-Io-DaD" secondAttribute="height" multiplier="343:206" id="NUS-Xb-SWJ"/>
@@ -37,7 +37,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="御湖为居，陶冶生活，为广州精心造城，湖畔的生活，可以如此舒适而充满诗意..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSL-Ck-61S">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="御湖为居，陶冶生活，为广州精心造城，湖畔的生活，可以如此舒适而充满诗意..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSL-Ck-61S">
                                 <rect key="frame" x="16" y="48" width="311" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.12549019607843137" green="0.1764705882352941" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>

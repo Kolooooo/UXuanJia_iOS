@@ -8,9 +8,6 @@
 
 import UIKit
 
-//宽高比
-private let scale = 375/320
-
 class UXJHousesSetVC: UXJBaseVC, UITableViewDelegate, UITableViewDataSource {
 
     override func viewDidLoad() {
@@ -19,25 +16,45 @@ class UXJHousesSetVC: UXJBaseVC, UITableViewDelegate, UITableViewDataSource {
         //视图布局
         self.createUI()
         
-        //创建复用的单元格
+        //注册cellID
         let nib = UINib(nibName: "UXJHousesSetCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "housesSetCell")
+        tableView.register(UINib(nibName: "UXJHousesSetHeadCell", bundle: nil), forCellReuseIdentifier: "housesSetHeadCell")
     }
 
     //MARK: - tableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0 {
+            return 320
+        }
+        return 458
     }
     
     //创建表格单元
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        //头部视图
+        if indexPath.row == 0 {
+            let cell: UXJHousesSetHeadCell = tableView.dequeueReusableCell(withIdentifier: "housesSetHeadCell") as! UXJHousesSetHeadCell
+            
+            cell.selectionStyle = .none
+            
+            cell.setBannerView(["ceshi"])
+            
+            return cell
+        }
+        
         
         let cell: UXJHousesSetCell = tableView.dequeueReusableCell(withIdentifier: "housesSetCell") as! UXJHousesSetCell
         
         cell.selectionStyle = .none
         
         //传值创建商品，后面换成model
-        cell.createList(num: 4)
+        cell.createList(num: Int(arc4random()%4+1))
         
         cell.toSetDetailBlock = {
             print("查看套餐详情")
@@ -45,17 +62,11 @@ class UXJHousesSetVC: UXJBaseVC, UITableViewDelegate, UITableViewDataSource {
         
         cell.buttonBlock = { (tag: Int) in
             print("点击第\(tag)个商品，查看详情")
+            let goodsDetailVC = UXJGoodsDetailVC()
+            self.navigationController?.pushViewController(goodsDetailVC, animated: true)
         }
         
         return cell
-    }
-    
-    //点击方法
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //        let settingVc = UXJTestVC()
-        //        navigationController?.pushViewController(settingVc, animated: true)
-        
-        print(indexPath.row)
     }
 
     //MARK: - 视图布局
@@ -71,6 +82,7 @@ class UXJHousesSetVC: UXJBaseVC, UITableViewDelegate, UITableViewDataSource {
         footerImage.snp.makeConstraints { (make) in
             make.center.equalTo(footerView)
         }
+        
     }
     
     //MARK: - 懒加载
@@ -79,18 +91,9 @@ class UXJHousesSetVC: UXJBaseVC, UITableViewDelegate, UITableViewDataSource {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
-        tableView.estimatedRowHeight = 458
         tableView.showsVerticalScrollIndicator = false
         
         return tableView
-    }()
-    
-    //头部视图
-    private lazy var headView: UIView = {
-        let view = UIView()
-        view.frame = .init(x: 0, y: 0, width: SCREEN_W, height: 84)
-        
-        return view
     }()
     
     //尾部视图

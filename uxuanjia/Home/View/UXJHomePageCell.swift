@@ -28,7 +28,7 @@ class UXJHomePageCell: UITableViewCell {
         whiteView.layer.shadowOffset = CGSize(width: 1, height: 1) //偏移
         whiteView.layer.shadowOpacity = 0.1 //阴影透明度
         whiteView.layer.shadowRadius = 1 //阴影半径
-        
+        whiteView.layer.cornerRadius = 5 //圆角
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

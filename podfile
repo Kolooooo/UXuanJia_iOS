@@ -6,7 +6,7 @@ target 'uxuanjia' do
     pod 'SnapKit', '~> 3.2.0'
 
     pod 'AFNetworking', '~> 3.1.0' # AFNetworking Swift 版最新Alamofire 只适配9.0 以上版本，所以选用AFNetworking
-
+ 
     pod 'SwiftyJSON', '~> 3.1.4'
     
     pod 'SDWebImage', '~> 4.0.0'
