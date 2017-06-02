@@ -45,6 +45,7 @@ class UXJHousesSetCell: UITableViewCell {
             button.frame = CGRect.init(x: x, y: 0, width: size, height: size)
             button.tag = index
             button.backgroundColor = UIColor.red
+//            button.backgroundColor = rgbColor(red: CGFloat(arc4random()%256), green: CGFloat(arc4random()%256), blue: CGFloat(arc4random()%256))
             button.addTarget(self, action: #selector(buttonClick), for: .touchUpInside)
             
             listView.addSubview(button)
@@ -65,6 +66,7 @@ class UXJHousesSetCell: UITableViewCell {
         bgView.layer.shadowOffset = CGSize(width: 1, height: 1) //偏移
         bgView.layer.shadowOpacity = 0.1 //阴影透明度
         bgView.layer.shadowRadius = 1 //阴影半径
+        bgView.layer.cornerRadius = 5 //圆角
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
