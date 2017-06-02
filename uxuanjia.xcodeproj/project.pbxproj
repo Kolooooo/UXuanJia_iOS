@@ -26,6 +26,7 @@
 		54E4A9321ED7BEAD004B33E6 /* uxuanjiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4A9311ED7BEAD004B33E6 /* uxuanjiaTests.swift */; };
 		54E4A93D1ED7BEAD004B33E6 /* uxuanjiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4A93C1ED7BEAD004B33E6 /* uxuanjiaUITests.swift */; };
 		BAA8DA80C03B782D11A66EF1 /* Pods_uxuanjia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609BEAF4B72D19F6805C155E /* Pods_uxuanjia.framework */; };
+		BEEFE1831EE10EA80051B21E /* UXJRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEFE1821EE10EA80051B21E /* UXJRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		54E4A93C1ED7BEAD004B33E6 /* uxuanjiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uxuanjiaUITests.swift; sourceTree = "<group>"; };
 		54E4A93E1ED7BEAD004B33E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		609BEAF4B72D19F6805C155E /* Pods_uxuanjia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uxuanjia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEEFE1821EE10EA80051B21E /* UXJRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UXJRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +282,7 @@
 		BE04B2501EDFF62B00F387A7 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				BEEFE1821EE10EA80051B21E /* UXJRequest.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				542D257F1EDFEAEA00994E06 /* UXJNavigationController.swift in Sources */,
 				542D258C1EE01BF700994E06 /* UXJHousesSetVC.swift in Sources */,
 				542D256C1EDFEAD000994E06 /* UXJPersonalCenterVC.swift in Sources */,
+				BEEFE1831EE10EA80051B21E /* UXJRequest.swift in Sources */,
 				542D25801EDFEAEA00994E06 /* UXJRootVC.swift in Sources */,
 				542D258F1EE01F9800994E06 /* UXJHousesSetCell.swift in Sources */,
 				542D257A1EDFEAE300994E06 /* SystemConfig.swift in Sources */,
@@ -642,7 +646,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = uxuanjia/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uxuanjia.uxuanjia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -660,7 +664,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = uxuanjia/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uxuanjia.uxuanjia;
 				PRODUCT_NAME = "$(TARGET_NAME)";

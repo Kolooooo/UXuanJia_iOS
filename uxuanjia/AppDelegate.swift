@@ -22,9 +22,53 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let rootVC: UXJRootVC = UXJRootVC()
         window?.rootViewController = rootVC
         self.window?.makeKeyAndVisible()
-    
+        
+        // MARK: - 结构体
+        
+        
+        // MARK: - 视图属性
+        
+        // MARK: - 数据属性
+        
+        // MARK: - 全局变量
+        
+        
+        // MARK: - 视图生命周期
+        
+        // MARK: - 内部逻辑
+        
+        // MARK: - 代理方法
+        
+        // MARK: - 数据请求/数据处理
+        
+        // MARK: - 视图布局
+        // MARK: 视图样式
+        // MARK: 视图结构
+        // MARK: 视图布局
+        // MARK: 视图行为
+        
+        
+        // MARK: - Setter and Getter
+        
+        // MARK: - 懒加载
+        
+        
+        
+        /// ken.todo: 测试请求, 测试完毕就要删除
+        networkTest()
+        
         
         return true
+    }
+    
+    func networkTest() {
+        let params = ["offset" : "0", "limit" : "10"]
+        let urlString = "platform/mobile/premises/search"
+        UXJRequest.request(type: .GET, classURLString: urlString, parameters: params, success: { (json: [String : Any]) -> Void in
+            print(json)
+        }, failure: { (error: Error) -> Void in
+            print(error)
+        })
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
