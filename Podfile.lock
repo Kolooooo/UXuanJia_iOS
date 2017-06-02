@@ -1,5 +1,19 @@
 PODS:
-  - Alamofire (4.4.0)
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
   - IQKeyboardManagerSwift (4.0.8)
   - MJRefresh (3.1.12)
   - SDWebImage (4.0.0):
@@ -10,7 +24,7 @@ PODS:
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.4.0)
+  - AFNetworking (~> 3.1.0)
   - IQKeyboardManagerSwift (= 4.0.8)
   - MJRefresh (~> 3.1.12)
   - SDWebImage (~> 4.0.0)
@@ -19,7 +33,7 @@ DEPENDENCIES:
   - SwiftyJSON (~> 3.1.4)
 
 SPEC CHECKSUMS:
-  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   IQKeyboardManagerSwift: c04bc9f68473823f825eb44d958fce98d921bead
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
@@ -27,6 +41,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: f95c7ba4fe90be5c5509058584045e18be784359
+PODFILE CHECKSUM: 56089a453d316c702529e248b125835467cd00bc
 
 COCOAPODS: 1.2.1

@@ -4,7 +4,7 @@
 //
 //  Created by JHnoplan on 17/5/26.
 //  Copyright © 2017年 JHnoplan. All rights reserved.
-//
+//  楼盘列表
 
 import UIKit
 import SnapKit
@@ -14,19 +14,9 @@ class UXJHomePageVC: UXJBaseVC, UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationItem.titleView = titleView
         
-        self.view.addSubview(homeTableView)
-        homeTableView.snp.makeConstraints { (make) in
-            make.left.right.bottom.top.equalTo(self.view)
-        }
-        
-        homeTableView.tableFooterView = footerView
-        footerView.addSubview(footerImage)
-        footerImage.snp.makeConstraints { (make) in
-            make.center.equalTo(footerView)
-        }
+        //视图布局
+        self.createUI()
         
         //创建复用的单元格
         let nib = UINib(nibName: "UXJHomePageCell", bundle: nil)
@@ -34,7 +24,7 @@ class UXJHomePageVC: UXJBaseVC, UITableViewDelegate, UITableViewDataSource {
         
     }
     
-    //tableView相关
+    //MARK: - tableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
@@ -51,14 +41,41 @@ class UXJHomePageVC: UXJBaseVC, UITableViewDelegate, UITableViewDataSource {
     
     //点击方法
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-//        let settingVc = UXJTestVC()
-//        navigationController?.pushViewController(settingVc, animated: true)
-        
-        print(indexPath.row)
+        let housesSetVC = UXJHousesSetVC()
+        housesSetVC.title = "时代春树里" //测试
+        navigationController?.pushViewController(housesSetVC, animated: true)
     }
     
-    //MARK: - lazy methods
+    //MARK: - 视图布局
+    func createUI() {
+        self.navigationItem.titleView = titleView
+        
+        self.view.addSubview(homeTableView)
+        homeTableView.snp.makeConstraints { (make) in
+            make.left.right.bottom.top.equalTo(self.view)
+        }
+        
+        homeTableView.tableFooterView = footerView
+        footerView.addSubview(footerImage)
+        footerImage.snp.makeConstraints { (make) in
+            make.center.equalTo(footerView)
+        }
+        
+        //自定义leftBarItem
+        leftView.frame = .init(x: 0, y: 0, width: leftLabel.frame.width+18, height: 20)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftView)
+        leftView.addSubview(leftLabel)
+        leftImage.frame = .init(x: leftView.frame.width-18, y: 1, width: 18, height: 18)
+        leftView.addSubview(leftImage)
+        leftView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(UXJHomePageVC.selectCity))) //添加点击手势
+    }
+    
+    //选择城市点击方法
+    func selectCity(){
+        print("点击")
+    }
+    
+    //MARK: - 懒加载
     private lazy var homeTableView: UITableView = {
         let tableView = UITableView()
         tableView.delegate = self
@@ -70,6 +87,7 @@ class UXJHomePageVC: UXJBaseVC, UITableViewDelegate, UITableViewDataSource {
         return tableView
     }()
     
+    //头部视图
     private lazy var titleView: UIImageView = {
         let titleView = UIImageView()
         titleView.image = UIImage(named: "uxj_home_titleView")?.withRenderingMode(.alwaysOriginal)
@@ -78,23 +96,32 @@ class UXJHomePageVC: UXJBaseVC, UITableViewDelegate, UITableViewDataSource {
         return titleView
     }()
     
-    //自定义leftbarItem
-    private lazy var leftButton: UIButton = {
-        let leftButton = UIButton()
-//        leftButton.frame = .init(x: 0, y: 0, width: 24, height: 24)
-//        leftButton.setImage(UIImage(named: "uxj_arrow_lower"), for: UIControlState.normal)
-        let title = "广州"
-        let size = title.boundingRect(with: CGSize.init(width: CGFloat(MAXFLOAT), height: 20), options: [NSStringDrawingOptions.usesFontLeading,NSStringDrawingOptions.usesLineFragmentOrigin], attributes: [NSFontAttributeName:getFont(16)], context: nil).size
+    //自定义leftBarItem
+    private lazy var leftView: UIView = {
+        let view = UIView()
         
-        leftButton.setTitle(title, for: .normal)
-        leftButton.titleLabel?.font = getFont(16)
-        leftButton.setTitleColor(UIColor.black, for: .normal)
-        leftButton.frame = .init(x: 0, y: 0, width: size.width+1, height: 25)
-//        leftButton.addTarget(self, action: (selectCity), for: .touchUpInside)
-        
-        return leftButton
+        return view
     }()
     
+    private lazy var leftLabel: UILabel = {
+        let label = UILabel()
+        let title = "广州" //测试数据
+        let size = title.boundingRect(with: CGSize.init(width: CGFloat(MAXFLOAT), height: 20), options: [NSStringDrawingOptions.usesFontLeading,NSStringDrawingOptions.usesLineFragmentOrigin], attributes: [NSFontAttributeName:getFont(16)], context: nil).size //宽度自适应
+        label.text = title
+        label.frame = .init(x: 0, y: 0, width: size.width+1, height: 20)
+        label.font = getFont(16)
+        
+        return label
+    }()
+    
+    private lazy var leftImage: UIImageView = {
+        let leftImage = UIImageView()
+        leftImage.image = UIImage(named: "uxj_arrow_lower")?.withRenderingMode(.alwaysOriginal)
+        
+        return leftImage
+    }()
+    
+    //尾部视图
     private lazy var footerView: UIView = {
         let footerView = UIView()
         footerView.frame = .init(x: 0, y: 0, width: SCREEN_W, height: 84)
