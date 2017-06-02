@@ -17,9 +17,5 @@ class UXJBaseVC: UIViewController {
         
         //导航栏不透明
         self.navigationController?.navigationBar.isTranslucent = false
-        
     }
-
-    
-
 }

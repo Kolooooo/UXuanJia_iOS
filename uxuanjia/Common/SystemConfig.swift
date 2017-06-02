@@ -8,30 +8,35 @@
 
 import UIKit
 
+// MARK: - 尺寸
 // 屏幕的宽
 let SCREEN_W = UIScreen.main.bounds.size.width
 // 屏幕的高
 let SCREEN_H = UIScreen.main.bounds.size.height
+//最大、最小长度
+public let SCREEN_MAX_LENGTH = max(SCREEN_W, SCREEN_H)
+public let SCREEN_MIN_LENGTH = min(SCREEN_W, SCREEN_H)
+/// 导航高度
+public let NAV_HEIGHT : CGFloat = 64.0
+/// 工具栏高度
+public let TOOLBAR_HEIGHT : CGFloat = 49.0
 
-//配置3原色
+
+// MARK: - 颜色
+// 配置3原色
 func rgbColor(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat = 1) -> UIColor {
     return UIColor.init(red: red / 255.0, green: green / 255.0, blue: blue / 255.0, alpha: alpha)
 }
 
-///导航高度
-public let NAV_HEIGHT : CGFloat = 64.0
-///工具栏高度
-public let TOOLBAR_HEIGHT : CGFloat = 49.0
-///log输出
+
+/// log输出
 public func printLog<T>(_ items:T ,file:String = #file,method: String = #function,line: Int = #line){
     #if DEBUG
         print("\((file as NSString).lastPathComponent)[\(line)],\(method):\n\(items)\n--------------------------------------")
     #endif
 }
 
-//最大、最小长度
-public let SCREEN_MAX_LENGTH = max(SCREEN_W, SCREEN_H)
-public let SCREEN_MIN_LENGTH = min(SCREEN_W, SCREEN_H)
+
 
 /**
  *  设备类型
