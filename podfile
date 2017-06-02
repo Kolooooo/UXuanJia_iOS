@@ -4,17 +4,18 @@ use_frameworks!
 target 'uxuanjia' do
     
     pod 'SnapKit', '~> 3.2.0'
-
-    pod 'Alamofire', '~> 4.4.0'
-
+    
+    #   pod 'Alamofire', '~> 4.4.0'
+    pod 'AFNetworking'
+    
     pod 'SwiftyJSON', '~> 3.1.4'
-
+    
     pod 'SDWebImage', '~> 4.0.0'
-
+    
     pod 'SVProgressHUD', '~> 2.1.2'
-
+    
     pod 'IQKeyboardManagerSwift', '4.0.8'
-
+    
     pod 'MJRefresh', '~> 3.1.12'
-
+    
 end

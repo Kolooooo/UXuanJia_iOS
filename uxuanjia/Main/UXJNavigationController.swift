@@ -19,7 +19,7 @@ class UXJNavigationController: UINavigationController {
         
     }
     
-    //重写push方法 
+    //重写push方法
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         
         if self.viewControllers.count > 0 {
@@ -29,5 +29,4 @@ class UXJNavigationController: UINavigationController {
         }
         super.pushViewController(viewController, animated: true)
     }
-
 }

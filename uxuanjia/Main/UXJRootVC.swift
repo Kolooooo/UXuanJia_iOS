@@ -9,13 +9,14 @@
 import UIKit
 
 class UXJRootVC: UIViewController {
-    
+    // 属性
     public var mainTabBarController = UITabBarController()
     
     private let homeNav: UXJNavigationController = UXJNavigationController.init(rootViewController: UXJHomePageVC())
-    
     private let personalNav: UXJNavigationController = UXJNavigationController.init(rootViewController: UXJPersonalCenterVC())
+    
 
+    // 生命周期
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,7 +37,4 @@ class UXJRootVC: UIViewController {
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.black], for: .normal)
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.orange], for: .selected)
     }
-
-    
-
 }

@@ -12,8 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         //初始化
@@ -23,10 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let rootVC: UXJRootVC = UXJRootVC()
         window?.rootViewController = rootVC
         self.window?.makeKeyAndVisible()
-        
-        
-        
-        
+    
         
         return true
     }
